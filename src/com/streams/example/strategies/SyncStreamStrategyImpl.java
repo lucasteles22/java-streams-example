@@ -5,11 +5,11 @@ import com.streams.example.io.Log;
 import java.awt.*;
 import java.util.OptionalDouble;
 
-public final class SyncStreamStrategy extends Strategy {
+public final class SyncStreamStrategyImpl extends StrategyImpl {
 
     private static final String LABEL = "Sync stream";
 
-    public SyncStreamStrategy() {
+    public SyncStreamStrategyImpl() {
         super(LABEL);
     }
 

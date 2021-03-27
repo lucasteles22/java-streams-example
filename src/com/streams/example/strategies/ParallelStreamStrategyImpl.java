@@ -5,11 +5,11 @@ import com.streams.example.io.Log;
 import java.awt.*;
 import java.util.OptionalDouble;
 
-public final class ParallelStreamStrategy extends Strategy {
+public final class ParallelStreamStrategyImpl extends StrategyImpl {
 
     private static final String LABEL = "Parallel stream";
 
-    public ParallelStreamStrategy() {
+    public ParallelStreamStrategyImpl() {
         super(LABEL);
     }
 

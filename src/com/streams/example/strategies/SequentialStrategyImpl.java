@@ -6,11 +6,11 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class SequentialStrategy extends Strategy {
+public final class SequentialStrategyImpl extends StrategyImpl {
 
     private static final String LABEL = "Without stream";
 
-    public SequentialStrategy() {
+    public SequentialStrategyImpl() {
         super(LABEL);
     }
 

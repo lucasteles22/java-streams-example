@@ -1,26 +1,26 @@
 package com.streams.example;
 
 import com.streams.example.io.Greeting;
-import com.streams.example.strategies.IStrategy;
-import com.streams.example.strategies.ParallelStreamStrategy;
-import com.streams.example.strategies.SequentialStrategy;
-import com.streams.example.strategies.SyncStreamStrategy;
+import com.streams.example.strategies.Strategy;
+import com.streams.example.strategies.ParallelStreamStrategyImpl;
+import com.streams.example.strategies.SequentialStrategyImpl;
+import com.streams.example.strategies.SyncStreamStrategyImpl;
 
 public class Main {
 
     public static void main(String[] args) {
-        IStrategy strategy;
+        Strategy strategy;
 
         var conditional = Greeting.input();
         switch (conditional) {
             case 1:
-                strategy = new SequentialStrategy();
+                strategy = new SequentialStrategyImpl();
                 break;
             case 2:
-                strategy = new SyncStreamStrategy();
+                strategy = new SyncStreamStrategyImpl();
                 break;
             default:
-                strategy = new ParallelStreamStrategy();
+                strategy = new ParallelStreamStrategyImpl();
                 break;
         }
 
