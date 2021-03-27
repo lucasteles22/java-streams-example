@@ -1,5 +1,6 @@
 package com.streams.example;
 
+import com.streams.example.io.Greeting;
 import com.streams.example.strategies.IStrategy;
 import com.streams.example.strategies.ParallelStreamStrategy;
 import com.streams.example.strategies.SequentialStrategy;
@@ -9,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         IStrategy strategy;
 
-        var conditional = 1;
+        var conditional = Greeting.input();
         switch (conditional) {
             case 1:
                 strategy = new SequentialStrategy();
