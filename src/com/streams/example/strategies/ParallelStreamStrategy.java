@@ -6,6 +6,7 @@ import java.awt.*;
 import java.util.OptionalDouble;
 
 public final class ParallelStreamStrategy extends Strategy {
+
     private static final String LABEL = "Parallel stream";
 
     public ParallelStreamStrategy() {

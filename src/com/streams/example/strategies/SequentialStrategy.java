@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class SequentialStrategy extends Strategy {
+
     private static final String LABEL = "Without stream";
 
     public SequentialStrategy() {

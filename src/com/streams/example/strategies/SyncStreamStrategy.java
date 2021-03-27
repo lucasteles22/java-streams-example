@@ -6,6 +6,7 @@ import java.awt.*;
 import java.util.OptionalDouble;
 
 public final class SyncStreamStrategy extends Strategy {
+
     private static final String LABEL = "Sync stream";
 
     public SyncStreamStrategy() {

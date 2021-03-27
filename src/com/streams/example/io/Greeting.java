@@ -5,14 +5,13 @@ import java.util.Scanner;
 
 public class Greeting {
 
-    private static final int[] COMMANDS = new int[] { 1, 2, 3 };
+    private static final int[] COMMANDS = { 1, 2, 3 };
 
     public static int input() {
         Scanner sc = new Scanner(System.in);
         do {
             hello();
             var option = sc.nextLine();
-
             try {
                 if (option.equals("q")) exit();
 

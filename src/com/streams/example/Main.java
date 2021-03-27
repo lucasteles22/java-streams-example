@@ -7,6 +7,7 @@ import com.streams.example.strategies.SequentialStrategy;
 import com.streams.example.strategies.SyncStreamStrategy;
 
 public class Main {
+
     public static void main(String[] args) {
         IStrategy strategy;
 
@@ -25,5 +26,4 @@ public class Main {
 
         strategy.measure();
     }
-
 }

@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public abstract class Strategy implements IStrategy {
+
     private Instant start;
     private Instant end;
     private final String label;
